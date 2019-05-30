@@ -185,7 +185,7 @@ def loop():                       #GUI
     global tcpClicSock, BtnIP,led_status      #The value of tcpClicSock changes in the function loop(),would also changes in global so the other functions could use it.
     while True:
         color_bg = '#e6e6e6'        #Set background color
-        color_text = '#0000b3'      #Set text color
+        color_text = '#000000'      #Set text color
         color_btn = '#f0f0f5'       #Set button color
         color_line = '#f9e6ff'      #Set line color
         color_can = '#212121'       #Set canvas color
@@ -193,7 +193,7 @@ def loop():                       #GUI
         # target_color='#FF6D00'
 
         root = tk.Tk()            #Define a window named root
-        root.title('Mars Rover PiCar')      #Main window title
+        root.title('Rover PiCar')      #Main window title
         root.geometry('1024x800')  #Main window size, middle of the English letter x.
         root.config(bg=color_bg)  #Set the background color of root window
     
@@ -242,16 +242,16 @@ def loop():                       #GUI
         E_T2.place(x=650,y=695)                             #Define a Entry and put it in position
 
         BtnLED = tk.Button(root, width=15, text='Lights ON',fg=color_text,bg=color_btn,relief='ridge')
-        BtnLED.place(x=300,y=520)
+        BtnLED.place(x=100,y=520)
 
-        BtnOCV = tk.Button(root, width=15, text='OpenCV',fg=color_text,bg=color_btn,relief='ridge',command=call_opencv)
-        BtnOCV.place(x=30,y=520)
+        # BtnOCV = tk.Button(root, width=15, text='OpenCV',fg=color_text,bg=color_btn,relief='ridge',command=call_opencv)
+        # BtnOCV.place(x=30,y=520)
 
-        BtnFL = tk.Button(root, width=15, text='Find Line',fg=color_text,bg=color_btn,relief='ridge')
-        BtnFL.place(x=165,y=520)
+        # BtnFL = tk.Button(root, width=15, text='Find Line',fg=color_text,bg=color_btn,relief='ridge')
+        # BtnFL.place(x=165,y=520)
 
-        BtnSR3 = tk.Button(root, width=15, text='Sphinx SR',fg=color_text,bg=color_btn,relief='ridge',command=call_SR3)
-        BtnSR3.place(x=300,y=595)
+        # BtnSR3 = tk.Button(root, width=15, text='Sphinx SR',fg=color_text,bg=color_btn,relief='ridge',command=call_SR3)
+        # BtnSR3.place(x=300,y=595)
 
         E_C1.insert ( 0, 'Default:425' ) 
         E_C2.insert ( 0, 'Default:425' ) 
@@ -290,32 +290,32 @@ def loop():                       #GUI
             BtnVIN.config(fg=color_text,bg=color_btn)
             return a2t
 
-        def voice_command(event):
-            l_VIN.config(text='Command?')
-            BtnVIN.config(fg='#0277BD',bg='#BBDEFB')
-            v_command=voice_input()
-            l_VIN.config(text='%s'%v_command)
-            if 'forward' in v_command:
-                tcpClicSock.send(('forward').encode())
-            elif 'backward' in v_command:
-                tcpClicSock.send(('backward').encode())
-            elif 'left' in v_command:
-                tcpClicSock.send(('Left').encode())
-            elif 'right' in v_command:
-                tcpClicSock.send(('Right').encode())
-            elif 'stop' in v_command:
-                tcpClicSock.send(('stop').encode())
-                tcpClicSock.send(('Stop').encode())
-            elif 'find line' in v_command:
-                tcpClicSock.send(('findline').encode())
-            elif 'follow' in v_command:
-                tcpClicSock.send(('auto').encode())
-            elif 'lights on' in v_command:
-                tcpClicSock.send(('lightsON').encode())
-            elif 'lights off' in v_command:
-                tcpClicSock.send(('lightsOFF').encode())
-            else:
-                pass
+        # def voice_command(event):
+        #     l_VIN.config(text='Command?')
+        #     BtnVIN.config(fg='#0277BD',bg='#BBDEFB')
+        #     v_command=voice_input()
+        #     l_VIN.config(text='%s'%v_command)
+        #     if 'forward' in v_command:
+        #         tcpClicSock.send(('forward').encode())
+        #     elif 'backward' in v_command:
+        #         tcpClicSock.send(('backward').encode())
+        #     elif 'left' in v_command:
+        #         tcpClicSock.send(('Left').encode())
+        #     elif 'right' in v_command:
+        #         tcpClicSock.send(('Right').encode())
+        #     elif 'stop' in v_command:
+        #         tcpClicSock.send(('stop').encode())
+        #         tcpClicSock.send(('Stop').encode())
+        #     elif 'find line' in v_command:
+        #         tcpClicSock.send(('findline').encode())
+        #     elif 'follow' in v_command:
+        #         tcpClicSock.send(('auto').encode())
+        #     elif 'lights on' in v_command:
+        #         tcpClicSock.send(('lightsON').encode())
+        #     elif 'lights off' in v_command:
+        #         tcpClicSock.send(('lightsOFF').encode())
+        #     else:
+        #         pass
 
         def spd_set():                 #Call this function for speed adjustment
             tcpClicSock.send(('spdset:%s'%var_spd.get()).encode())   #Get a speed value from IntVar and send it to the car
@@ -507,9 +507,9 @@ def loop():                       #GUI
                 elif '2' in str(code_car):               #Translate the code to text
                     l_ip.config(text='Moving Backward')  #Put the text on the label
                 elif '3' in str(code_car):               #Translate the code to text
-                    l_ip.config(text='Turning Left')     #Put the text on the label
+                    l_ip.config(text='Turning Right')     #Put the text on the label
                 elif '4' in str(code_car):               #Translate the code to text
-                    l_ip.config(text='Turning Right')    #Put the text on the label
+                    l_ip.config(text='Turning Left')    #Put the text on the label
                 elif '5' in str(code_car):               #Translate the code to text
                     l_ip.config(text='Look Up')          #Put the text on the label
                 elif '6' in str(code_car):               #Translate the code to text
@@ -599,11 +599,11 @@ def loop():                       #GUI
         Btn14= tk.Button(root, width=8, text='Connect',fg=color_text,bg=color_btn,command=connect_2,relief='ridge')
         Btn14.place(x=540,y=105)                          #Define a Button and put it in position
 
-        BtnVIN = tk.Button(root, width=15, text='Voice Input',fg=color_text,bg=color_btn,relief='ridge')
-        BtnVIN.place(x=30,y=595)
+        # BtnVIN = tk.Button(root, width=15, text='Voice Input',fg=color_text,bg=color_btn,relief='ridge')
+        # BtnVIN.place(x=30,y=595)
 
-        l_VIN=tk.Label(root,width=16,text='Voice commands',fg=color_text,bg=color_btn)
-        l_VIN.place(x=30,y=565)      
+        # l_VIN=tk.Label(root,width=16,text='Voice commands',fg=color_text,bg=color_btn)
+        # l_VIN.place(x=30,y=565)      
 
         #Define buttons and put these in position
         Btn0 = tk.Button(root, width=8, text='Forward',fg=color_text,bg=color_btn,relief='ridge')
@@ -669,14 +669,14 @@ def loop():                       #GUI
         BtnM2.bind('<ButtonPress-1>', EM2_set)
         BtnT1.bind('<ButtonPress-1>', ET1_set)
         BtnT2.bind('<ButtonPress-1>', ET2_set)
-        BtnFL.bind('<ButtonPress-1>', find_line)
-        BtnVIN.bind('<ButtonPress-1>', voice_command)
+        # BtnFL.bind('<ButtonPress-1>', find_line)
+        # BtnVIN.bind('<ButtonPress-1>', voice_command)
 
         BtnLED.bind('<ButtonPress-1>', lights_ON)
         # Bind the keys with the corresponding callback function
         root.bind('<KeyPress-w>', call_forward) 
-        root.bind('<KeyPress-a>', call_Left)
-        root.bind('<KeyPress-d>', call_Right)
+        root.bind('<KeyPress-a>', call_Right)
+        root.bind('<KeyPress-d>', call_Left)
         root.bind('<KeyPress-s>', call_back)
 
         # When these keys is released,call the function call_stop()
@@ -686,16 +686,16 @@ def loop():                       #GUI
         root.bind('<KeyRelease-s>', call_stop)
         root.bind('<KeyRelease-f>', lights_ON)
         root.bind('<KeyRelease-e>', find_line)
-        root.bind('<KeyRelease-q>', voice_command)
+        # root.bind('<KeyRelease-q>', voice_command)
 
         # Press these keyss to call the corresponding function()
         root.bind('<KeyPress-c>', call_Stop)
         root.bind('<KeyPress-z>', call_auto) 
-        root.bind('<KeyPress-j>', call_look_left)
-        root.bind('<KeyPress-l>', call_look_right)
+        root.bind('<KeyPress-j>', call_look_right)
+        root.bind('<KeyPress-l>', call_look_left)
         root.bind('<KeyPress-h>', call_ahead)
-        root.bind('<KeyPress-k>', call_look_down)
-        root.bind('<KeyPress-i>', call_look_up)
+        root.bind('<KeyPress-k>', call_look_up)
+        root.bind('<KeyPress-i>', call_look_down)
         root.bind('<KeyPress-x>', scan)
         root.bind('<Return>', connect)
         root.bind('<Shift_L>',call_stop)
