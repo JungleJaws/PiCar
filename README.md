@@ -16,7 +16,7 @@ Adeept is a technical service team of open source software and hardware. Dedicat
 The Adeept PiCar-B is an educational, smart car robot kit that aims to familiarize customers with sensors,actuators, and data transmission as a facet of the Internet of Things. The assembly of the robot was complex and took a lot of time to complete, but the Graphical User Interface of the software included with the PiCar-B Although the PiCar-B comes with its own “hat” for connecting the motor and sensors to the Raspberry Pi’s GPIOs, in the future, I would like to research how to attach more or different sensors to the Pi & PiCar to alter the functionality of the robot. Currently, the software that comes with the robot kit is similar to that in self-driving cars: Distance–Sensing software, Distance–Maintaining software, Line–Following software, Voice/Speech Recognition and Audio–Processing softwares, and even Object–Tracking software!
 
 # PiCar Setup
-![screenshot](https://s3.ap-northeast-2.amazonaws.com/storage-u-additor.io/5c9376ce6e1c51000f3498cf/image/0x0/gJQx9mV3pxfQHJGFpGShaEhPS514WkqszBDfPZfG)
+![screenshot](https://s3.ap-northeast-2.amazonaws.com/storage-u-additor.io/5c9376ce6e1c51000f3498cf/image/0x0/gJQx9mV3pxfQHJGFpGShaEhPS514WkqszBDfPZfG) 
 ## Features
 - STEM Educational Robot - An complete AI(Artificial Intelligence) robot kit based on the Raspberry Pi(Compatible with RPi 3B/3B+/2B/2B+, Raspberry Pi is NOT included).
 - Speech Recognition - PiCar-B can be controlled by voice; Object Recognition and Tracking - based on openCV; Automatic Obstacle Avoidance - based on ultrasonic sensor; Line Tracking - based on infrared reflection; C/S Architecture - can be remotely controlled by APP on PC; WS2812 RGB LEDs - can change a variety of colors, full of technology; Real-time Video Transmission.
@@ -67,3 +67,6 @@ In general, the pictures, specifically in the Assembly and Testing/Running secti
 Another problem we ran into was the PiCar turning left but not right. We could see each of the Keyboard Controls/Shortcuts worked triggering in the GUI, but when we pressed Right, the PiCar’s wheels would not turn past 90 degrees (straight ahead of the robot). We determined that the front wheels did not have the correct range of motion because the servo somehow got incorrectly calibrated. It took an incredible amount of time, effort, and questioning the existence of God to be able to disassemble the robot, recalibrate the servos, and finally put it all back together.
 
 In addition, the manual itself is written for users with a Windows computer, which made it extremely difficult to install the necessary software on our Macbook. What seemed at first like easy-to-follow directions became nightmarishly difficult on the Mac!
+
+## LED Sensors
+![screenshot](https://drive.google.com/file/d/1Lw0gKFrGUHIWR03y9nkZdjEUaGX6X4zd/view?usp=sharing)
