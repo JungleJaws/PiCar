@@ -69,4 +69,4 @@ Another problem we ran into was the PiCar turning left but not right. We could s
 In addition, the manual itself is written for users with a Windows computer, which made it extremely difficult to install the necessary software on our Macbook. What seemed at first like easy-to-follow directions became nightmarishly difficult on the Mac!
 
 ## LED Sensors
-![screenshot](https://drive.google.com/file/d/1Lw0gKFrGUHIWR03y9nkZdjEUaGX6X4zd/view?usp=sharing)
+![screenshot] url(https://drive.google.com/file/d/1Lw0gKFrGUHIWR03y9nkZdjEUaGX6X4zd/view?usp=sharing)
