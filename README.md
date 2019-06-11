@@ -1,5 +1,8 @@
 # Adeept 4WD Smart Car Kit for Raspberry Pi PiCar-B
 
+## Demo
+[![Watch the video](https://drive.google.com/file/d/17ERjKIvPtvfoMfP7GvRNHVJCkxVSJocR/view?usp=sharing)
+
 ## About This Product
 
 The Adeept PiCar-B is an educational, smart car robot kit that aims to familiarize customers with sensors,actuators, and data transmission as a facet of the Internet of Things. As a company, Adeept is a “technical service team of open source software and hardware […] Dedicated to applying the Internet and the latest industrial technology in open source area, [and striving] to provide the best hardware support and software service for general makers and electronic enthusiasts around the world.” Currently, the software that comes with the robot kit is similar to that in self-driving cars: Distance–Sensing software, Distance–Maintaining software, Line–Following software, Voice/Speech Recognition and Audio–Processing softwares, and even Object–Tracking software!
