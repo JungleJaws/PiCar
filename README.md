@@ -1,6 +1,6 @@
 # Adeept 4WD Smart Car Kit for Raspberry Pi PiCar-B
 ## DEMO
-![Watch Now](https://drive.google.com/file/d/17ERjKIvPtvfoMfP7GvRNHVJCkxVSJocR/preview)
+![Watch Now](https://drive.google.com/file/d/17ERjKIvPtvfoMfP7GvRNHVJCkxVSJocR/view)
 
 ## About This Product
 
