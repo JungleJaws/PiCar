@@ -1,8 +1,5 @@
 # Adeept 4WD Smart Car Kit for Raspberry Pi PiCar-B
 
-## Demo
-[![Watch the video](https://drive.google.com/file/d/17ERjKIvPtvfoMfP7GvRNHVJCkxVSJocR/view?usp=sharing)
-
 ## About This Product
 
 The Adeept PiCar-B is an educational, smart car robot kit that aims to familiarize customers with sensors,actuators, and data transmission as a facet of the Internet of Things. As a company, Adeept is a “technical service team of open source software and hardware […] Dedicated to applying the Internet and the latest industrial technology in open source area, [and striving] to provide the best hardware support and software service for general makers and electronic enthusiasts around the world.” Currently, the software that comes with the robot kit is similar to that in self-driving cars: Distance–Sensing software, Distance–Maintaining software, Line–Following software, Voice/Speech Recognition and Audio–Processing softwares, and even Object–Tracking software!
@@ -72,4 +69,4 @@ Another problem we ran into was the PiCar turning left but not right. We could s
 In addition, the manual itself is written for users with a Windows computer, which made it extremely difficult to install the necessary software on our Macbook. What seemed at first like easy-to-follow directions became nightmarishly difficult on the Mac!
 
 ## LED Sensors
-![screenshot] url(https://drive.google.com/file/d/1Lw0gKFrGUHIWR03y9nkZdjEUaGX6X4zd/view?usp=sharing)
+![LED Sensor](https://s3.ap-northeast-2.amazonaws.com/storage-u-additor.io/5c9376ce6e1c51000f3498cf/image/0x0/t1FSgd5SVjFD3iVimyoCuUGHBO6JJ8Fhg1xHYO3b)
